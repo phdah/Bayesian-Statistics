@@ -1,4 +1,4 @@
-# Bayesian Learning Exam 2021-01-15
+# Bayesian Learning 2021-01-15
 # Author: Philip Dahlqvist-Sjöberg
 
 library(latex2exp) # LaTeX in R
@@ -12,7 +12,7 @@ library(rstan)
 rm(list = ls())
 cat("\014")
 
-wd = "C:/Users/Philip/Downloads/Bayesian Statistics/Exam/" # Working directory
+wd = "C:/Users/" # Working directory
 
 ###############################
 ########## Problem 1 ########## 
@@ -141,32 +141,11 @@ for(j in 1:6){
 }
 par(mfrow=c(1,1))
 
-#### b) ####
-
-# I could not solve this....
-
-
-# # Laplace approximation 
-# p = 1
-# beta_var = tau^2
-# 
-# lap_approx = sum(dnorm(X[,6], mean = postMode[6], sd = postStd[6], log = T)) + dnorm(postMode[6], mean = 0, sd = beta_var, log = T) +
-#   (1/2)*log(det(postCov)) + (p/2)*log(2*pi)
-# 
-# M = exp(lap_approx)
-# 
-# 
-# log_reg(X, postMode)
-
-#### c) ####
-
-# I could not solve this....
-
 ###############################
 ########## Problem 4 ########## 
 ############################### 
 
-load("C:/Users/Philip/Downloads/Bayesian Statistics/Exam/Amazon.RData")
+load("C:/Users/")
 
 #### a) ####
 
